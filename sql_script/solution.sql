@@ -35,7 +35,7 @@ FROM get_fit_now_check_in
 WHERE check_in_date = '2018-01-09'
 AND membership_id LIKE '%48Z%';		
 		
--- get the suspect with gold membership
+-- get the suspects with gold membership
 SELECT *
 FROM get_fit_now_member
 WHERE id LIKE '%48Z%'
