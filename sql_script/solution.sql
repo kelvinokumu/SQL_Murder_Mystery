@@ -1,24 +1,24 @@
--- get reports from that specific day
+--1 get reports from that specific day
 SELECT *
 FROM crime_scene_report
 WHERE event_date = '2018-01-15' 
     AND city = 'SQL City' 
     AND event_type = 'murder';
 
--- get details of the person living in the last house
+--2 get details of the person living in the last house
 SELECT *
 FROM person
 WHERE address_street_name LIKE 'Northwestern Dr'
 ORDER By address_number DESC
 LIMIT 1;
 
--- get Annabel details who lives around Franklin Ave
+--3 get Annabel details who lives around Franklin Ave
 SELECT *
 FROM person
 WHERE name LIKE 'Annabel%'
 AND address_street_name LIKE 'Franklin Ave';
 
--- get details from the interview table
+--4 and 5 get details from the interview table
 -- first person
 SELECT *
 FROM interview
@@ -29,19 +29,19 @@ SELECT *
 FROM interview
 WHERE person_id = 16371;
 
--- combine the details from the 2 interviews		
+--6 combine the details from the 2 interviews		
 SELECT *
 FROM get_fit_now_check_in
 WHERE check_in_date = '2018-01-09'
 AND membership_id LIKE '%48Z%';		
-		
--- get the suspects with gold membership
+	
+--7 get the suspects with gold membership
 SELECT *
 FROM get_fit_now_member
 WHERE id LIKE '%48Z%'
 AND membership_status = 'gold';
 
--- get the suspect
+--8 get the suspect
 SELECT *
 FROM drivers_license
 INNER JOIN person
