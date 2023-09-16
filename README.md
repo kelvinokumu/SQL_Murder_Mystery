@@ -1,2 +1,3 @@
 # SQL Murder Mystery Challenge
-![ERD diagram](images/erd.png)
+
+<!-- ![ERD diagram](images/erd.png) -->
