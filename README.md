@@ -13,3 +13,7 @@
 
 ## Get Annabel details who lives around Franklin Ave
 ![ERD diagram](images/3.png)
+
+## Get details from the interview table
+![ERD diagram](images/4_and_5.png)
+
