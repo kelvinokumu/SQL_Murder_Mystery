@@ -17,3 +17,11 @@
 ## Get details from the interview table
 ![ERD diagram](images/4_and_5.png)
 
+## Combine details from the 2 interviews
+![ERD diagram](images/6.png)
+
+## Get suspects with gold membership
+![ERD diagram](images/7.png)
+
+## Join the tables to get the final suspect
+![ERD diagram](images/8.png)
