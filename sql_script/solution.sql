@@ -1,7 +1,9 @@
 -- get reports from that specific day
 SELECT *
 FROM crime_scene_report
-WHERE event_date = '2018-01-15' AND city = 'SQL City' AND event_type = 'murder';
+WHERE event_date = '2018-01-15' 
+    AND city = 'SQL City' 
+    AND event_type = 'murder';
 
 -- get details of the person living in the last house
 SELECT *
@@ -10,7 +12,7 @@ WHERE address_street_name LIKE 'Northwestern Dr'
 ORDER By address_number DESC
 LIMIT 1;
 
--- get Annabel details
+-- get Annabel details who lives around Franklin Ave
 SELECT *
 FROM person
 WHERE name LIKE 'Annabel%'
